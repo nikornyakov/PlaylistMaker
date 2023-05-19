@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
     android:orientation="vertical"
+    style="@style/SCREEN"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,12 +15,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="14dp"
         android:text="@string/playlist_maker"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:letterSpacing="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TitleStyle"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -44,20 +41,13 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button1"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
                 android:drawableStart="@drawable/vector"
                 android:text="@string/search"
-                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="22sp"
-                android:letterSpacing="0"
-                app:cornerRadius="20dp"
                 app:icon="@drawable/settings"
-                app:iconTint="@color/black"
-                android:drawablePadding="10dp"
+                style="@style/TextButtonStyle"
                 />
 
         </FrameLayout>
@@ -72,20 +62,13 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button2"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
                 android:drawableStart="@drawable/music"
                 android:text="@string/media"
-                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="22sp"
-                android:letterSpacing="0"
-                app:cornerRadius="16dp"
                 app:icon="@drawable/settings"
-                app:iconTint="@color/black"
-                android:drawablePadding="10dp"
+                style="@style/TextButtonStyle"
                 />
 
         </FrameLayout>
@@ -100,20 +83,13 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button3"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
                 android:drawableStart="@drawable/settings"
                 android:text="@string/settings"
-                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="22sp"
-                android:letterSpacing="0"
-                app:cornerRadius="16dp"
                 app:icon="@drawable/settings"
-                app:iconTint="@color/black"
-                android:drawablePadding="10dp"
+                style="@style/TextButtonStyle"
                 />
 
         </FrameLayout>

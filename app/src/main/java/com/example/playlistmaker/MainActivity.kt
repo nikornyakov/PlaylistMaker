@@ -2,14 +2,18 @@ package com.example.playlistmaker
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
     @SuppressLint("MissingInflatedId", "SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         setContentView(R.layout.activity_main)
 
         val button1: View = findViewById(R.id.search_button)
@@ -29,7 +33,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, SettingsActivity::class.java)
             startActivity(intent)
         }
-
     }
 }
 
