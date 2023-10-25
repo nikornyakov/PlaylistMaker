@@ -12,24 +12,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
         setContentView(R.layout.activity_main)
 
-        val button1: View = findViewById(R.id.search_button)
-        button1.setOnClickListener {
+        val buttonSearch: View = findViewById(R.id.search_button)
+        buttonSearch.setOnClickListener {
             val intent = Intent(this@MainActivity, SearchActivity::class.java)
             startActivity(intent)
         }
 
-        val button2: View = findViewById(R.id.media_button)
-        button2.setOnClickListener {
+        val buttonMedia: View = findViewById(R.id.media_button)
+        buttonMedia.setOnClickListener {
             val intent = Intent(this@MainActivity, MediaActivity::class.java)
             startActivity(intent)
         }
 
-        val button3: View = findViewById(R.id.settings_button_container)
-        button3.setOnClickListener {
+        val buttonSettings: View = findViewById(R.id.settings_button)
+        buttonSettings.setOnClickListener {
             val intent = Intent(this@MainActivity, SettingsActivity::class.java)
             startActivity(intent)
         }
