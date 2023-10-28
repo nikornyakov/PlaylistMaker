@@ -26,12 +26,9 @@
             <TextView
                 style="@style/SettingsMenuItemTextStyle"
                 android:text="@string/night" />
-
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switcher"
                 style="@style/DayNightSwitchStyle" />
-
-
 
         </LinearLayout>
 
@@ -41,13 +38,11 @@
             <TextView
                 style="@style/SettingsMenuItemTextStyle"
                 android:text="@string/share" />
-
             <ImageView
                 android:id="@+id/shareButton"
                 style="@style/SettingsMenuItemIconStyle"
                 android:src="@drawable/share"
                 android:importantForAccessibility="no" />
-
 
         </LinearLayout>
 
@@ -57,13 +52,11 @@
             <TextView
                 style="@style/SettingsMenuItemTextStyle"
                 android:text="@string/write_support" />
-
             <ImageView
                 android:id="@+id/support_button"
                 style="@style/SettingsMenuItemIconStyle"
                 android:src="@drawable/support"
                 android:importantForAccessibility="no" />
-
 
         </LinearLayout>
 
@@ -73,17 +66,14 @@
             <TextView
                 style="@style/SettingsMenuItemTextStyle"
                 android:text="@string/contract" />
-
             <ImageView
                 android:id="@+id/user_agreement"
                 style="@style/SettingsMenuItemIconStyle"
                 android:src="@drawable/share"
                 android:importantForAccessibility="no" />
 
-
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
