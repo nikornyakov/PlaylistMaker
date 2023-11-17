@@ -14,10 +14,6 @@ import androidx.appcompat.widget.Toolbar
 @Suppress("DEPRECATION")
 class SearchActivity : AppCompatActivity() {
 
-    companion object {
-        private const val SEARCH_REQUEST = "SEARCH_REQUEST"
-    }
-
     private lateinit var searchRequest: String
 
 
@@ -72,4 +68,9 @@ class SearchActivity : AppCompatActivity() {
             View.VISIBLE
         }
     }
+
+    companion object {
+        private const val SEARCH_REQUEST = "SEARCH_REQUEST"
+    }
+
 }

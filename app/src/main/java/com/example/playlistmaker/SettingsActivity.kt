@@ -16,20 +16,20 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(R.layout.settings)
 
         val themeButton = findViewById<SwitchCompat>(R.id.switcher)
+
         val toolbar = findViewById<Toolbar>(R.id.settings_toolbar)
         toolbar.setNavigationOnClickListener {
             onBackPressed()
         }
 
         themeButton.setOnCheckedChangeListener { _, isChecked ->
+
             if (isChecked) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-
-
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-
             }
+
         }
 
         val shareButton = findViewById<ImageView>(R.id.shareButton)

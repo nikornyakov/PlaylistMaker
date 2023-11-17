@@ -21,18 +21,18 @@
         android:id="@+id/search_button"
         style="@style/MainButtons"
         android:text="@string/search"
-        app:icon="@drawable/vector" />
+        app:icon="@drawable/ic_search_19" />
 
     <Button
         android:id="@+id/media_button"
         style="@style/MainButtons"
         android:text="@string/media"
-        app:icon="@drawable/music" />
+        app:icon="@drawable/ic_music_24" />
 
     <Button
         android:id="@+id/settings_button"
         style="@style/MainButtons"
         android:text="@string/settings"
-        app:icon="@drawable/settings" />
+        app:icon="@drawable/ic_settings_20" />
 
 </LinearLayout>

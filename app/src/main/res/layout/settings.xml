@@ -41,7 +41,7 @@
             <ImageView
                 android:id="@+id/shareButton"
                 style="@style/SettingsMenuItemIconStyle"
-                android:src="@drawable/share"
+                android:src="@drawable/ic_share_24"
                 android:importantForAccessibility="no" />
 
         </LinearLayout>
@@ -55,7 +55,7 @@
             <ImageView
                 android:id="@+id/support_button"
                 style="@style/SettingsMenuItemIconStyle"
-                android:src="@drawable/support"
+                android:src="@drawable/ic_support_20"
                 android:importantForAccessibility="no" />
 
         </LinearLayout>
@@ -69,7 +69,7 @@
             <ImageView
                 android:id="@+id/user_agreement"
                 style="@style/SettingsMenuItemIconStyle"
-                android:src="@drawable/share"
+                android:src="@drawable/arrow_forward"
                 android:importantForAccessibility="no" />
 
         </LinearLayout>

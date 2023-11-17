@@ -48,6 +48,7 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:contentDescription">@null</item>
+        <item name="tint">?attr/customColorDrawableValue</item>
 
     </style>
 
