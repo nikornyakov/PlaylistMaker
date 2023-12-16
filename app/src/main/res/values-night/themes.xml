@@ -11,6 +11,7 @@
         <item name="colorSurface">@color/white</item>
         <item name="colorOnSurface">@color/black</item>
         <item name="android:statusBarColor">@color/night_dark</item>
+        <item name="colorOnPrimarySurface">@color/white</item>
 
     </style>
 
