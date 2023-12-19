@@ -10,6 +10,7 @@
         <item name="colorSurface">@color/grey_light</item>
         <item name="colorOnSurface">@color/grey</item>
         <item name="android:statusBarColor">@color/blue</item>
+        <item name="colorOnPrimarySurface">@color/grey</item>
 
     </style>
 

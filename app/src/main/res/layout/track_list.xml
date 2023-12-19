@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/track_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="61dp"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/spacing_12"
+    android:paddingEnd="@dimen/spacing_12">
+
+    <ImageView
+        android:id="@+id/track_list_image_url"
+        style="@style/track_list_image_style"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/track_list_arrow_forward"
+        android:layout_width="@dimen/spacing_24"
+        android:layout_height="@dimen/spacing_24"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="end"
+        android:src="@drawable/arrow_forward"
+        app:tint="?attr/colorOnPrimarySurface"
+        tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="53dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/track_list_name"
+            style="@style/track_list_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_14"
+            android:paddingBottom="1dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/text_medium"
+            tools:text="track name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/track_list_artist_name"
+                style="@style/track_list_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="?attr/colorOnPrimarySurface"
+                android:textSize="@dimen/text_small"
+                tools:ignore="TextContrastCheck"
+                tools:text="artist name" />
+
+            <ImageView
+                android:id="@+id/track_list_dot"
+                android:layout_width="@dimen/spacing_14"
+                android:layout_height="@dimen/spacing_14"
+                android:src="@drawable/ic_dot"
+                app:tint="?attr/colorOnPrimarySurface"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/track_list_time"
+                style="@style/track_list_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnPrimarySurface"
+                android:textSize="@dimen/text_small"
+                tools:ignore="TextContrastCheck"
+                tools:text="track_time" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
