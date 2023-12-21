@@ -88,6 +88,46 @@
 
     </style>
 
+    <style name="TextInputLayout">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="hintTextColor">@android:color/transparent</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundColor">@color/grey_light</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_8dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_8dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_8dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_8dp</item>
+        <item name="endIconDrawable">@drawable/ic_clear_24</item>
+        <item name="endIconTint">?android:attr/textColorHintInverse</item>
+        <item name="endIconMode">clear_text</item>
+
+    </style>
+
+    <style name="TextInputEditText">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:drawableStart">@drawable/ic_search_19</item>
+        <item name="android:hint">@string/search</item>
+        <item name="android:textCursorDrawable">@drawable/shape_color_cursor</item>
+        <item name="android:textColorHint">?attr/colorOnSurface</item>
+        <item name="android:drawablePadding">@dimen/spacing_8</item>
+        <item name="android:paddingStart">@dimen/spacing_12</item>
+        <item name="android:paddingTop">@dimen/spacing_8</item>
+        <item name="android:paddingBottom">@dimen/spacing_8</item>
+
+    </style>
+
     <style name="track_list_image_style">
 
             <item name="android:layout_width">45dp</item>
@@ -97,8 +137,7 @@
 
     </style>
 
-    <style name="track_list_text_view">
-
+        <style name="track_list_text_view">
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>
         <item name="android:fontFamily">@font/ys_display_regular</item>
