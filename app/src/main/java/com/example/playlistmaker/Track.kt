@@ -14,7 +14,5 @@ data class Track(
 }
 
 class TrackResponse(
-    val results: ArrayList<Track>,
-    val resultCount: Int
+    val results: ArrayList<Track>
 )
-val songs = ArrayList<Track>()

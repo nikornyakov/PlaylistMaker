@@ -9,4 +9,8 @@
     <color name="grey">#AEAFB4</color>
     <color name="grey_light">#E6E8EB</color>
 
+    <style name="CursorColor">
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
 </resources>

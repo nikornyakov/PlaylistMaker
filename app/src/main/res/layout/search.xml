@@ -20,11 +20,11 @@
             android:paddingHorizontal="@dimen/radius_16dp"
             android:paddingVertical="@dimen/radius_8dp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/search_clear_button"
-                    style="@style/TextInputEditText"
-                    android:drawableTint="?attr/colorOnSurface"
-                    tools:targetApi="m" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_clear_button"
+                style="@style/TextInputEditText"
+                android:drawableTint="?attr/colorOnSurface"
+                tools:ignore="UnusedAttribute,TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

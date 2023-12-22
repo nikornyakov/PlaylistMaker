@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
@@ -23,6 +24,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 class SearchActivity : AppCompatActivity() {
 
     private var searchRequest: String = ""
+    private val resultsCount: Int = 0
+    private val songs = ArrayList<Track>()
     private val itunesBaseUrl = "https://itunes.apple.com"
     private val retrofit =
         Retrofit.Builder().baseUrl(itunesBaseUrl).addConverterFactory(GsonConverterFactory.create())
@@ -53,8 +56,8 @@ class SearchActivity : AppCompatActivity() {
         }
         val refreshButton = findViewById<Button>(R.id.button_update)
         refreshButton.setOnClickListener {
-            notFoundPlaceholder!!.visibility = View.GONE
-            noConnectionPlaceholder!!.visibility = View.GONE
+            notFoundPlaceholder?.visibility = View.GONE
+            noConnectionPlaceholder?.visibility = View.GONE
             search(searchRequest)
         }
 
@@ -102,9 +105,13 @@ class SearchActivity : AppCompatActivity() {
                 call: Call<TrackResponse>, response: Response<TrackResponse>
             ) {
                 val notFoundPlaceholder = findViewById<FrameLayout>(R.id.search_include_not_found)
-                if (response.body()?.resultCount == 0) {
+                val searchResultViewHolder = findViewById<RecyclerView>(R.id.recyclerView)
+                val results =response.body()?.results
+                if (results!!.isEmpty()) {
+                    searchResultViewHolder.visibility = View.GONE
                     notFoundPlaceholder.visibility = View.VISIBLE
                 } else {
+                    searchResultViewHolder.visibility = View.VISIBLE
                     songs.clear()
                     songs.addAll(response.body()?.results!!)
                     searchResultsAdapter.notifyDataSetChanged()
@@ -114,6 +121,8 @@ class SearchActivity : AppCompatActivity() {
             override fun onFailure(call: Call<TrackResponse>, t: Throwable) {
                 val noConnectionPlaceholder =
                     findViewById<FrameLayout>(R.id.search_include_no_connect)
+                val searchResultViewHolder = findViewById<RecyclerView>(R.id.recyclerView)
+                searchResultViewHolder.visibility = View.GONE
                 noConnectionPlaceholder.visibility = View.VISIBLE
             }
 

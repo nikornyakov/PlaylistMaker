@@ -15,6 +15,10 @@
 
     </style>
 
+    <style name="exampleCursor" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker">
 
         <item name="colorOnSecondary">@color/white</item>

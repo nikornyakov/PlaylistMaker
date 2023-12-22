@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 class SearchResultAdapter(
-    private var arrayOfTrack: ArrayList<Track>
+    private val arrayOfTrack: ArrayList<Track>
 ) : RecyclerView.Adapter<SearchResultViewHolder>() {
     fun addTracks(arrayOfTrack: ArrayList<Track>) {
         arrayOfTrack.addAll(arrayOfTrack)
