@@ -7,6 +7,7 @@
     <dimen name="text_small">11sp</dimen>
     <dimen name="text_medium">16sp</dimen>
     <dimen name="text_normal">22sp</dimen>
+    <dimen name="text_error">19sp</dimen>
     <dimen name="edit_text_height">52sp</dimen>
 
     <dimen name="radius_8dp">8dp</dimen>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        style="@style/ToolbarStyle"
+        app:title="@string/search"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_input"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:paddingHorizontal="@dimen/radius_16dp"
+        android:paddingVertical="@dimen/radius_8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_clear_button"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/spacing_8"
+            android:paddingBottom="@dimen/spacing_8"
+            android:drawableTint="?attr/colorOnSurface"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:visibility="visible"/>
+
+        <include
+            android:id="@+id/search_include_not_found"
+            layout="@layout/search_not_found"
+            tools:visibility="gone"/>
+        <include
+            android:id="@+id/search_include_no_connect"
+            layout="@layout/search_no_connection"
+            tools:visibility="gone"/>
+
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+
+

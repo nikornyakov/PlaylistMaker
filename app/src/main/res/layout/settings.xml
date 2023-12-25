@@ -12,68 +12,68 @@
         style="@style/ToolbarStyle"
         app:title="@string/settings" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="@dimen/spacing_16"
-        android:layout_marginTop="@dimen/spacing_24"
-        android:layout_marginEnd="@dimen/spacing_12"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:layout_marginEnd="@dimen/spacing_12"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <LinearLayout style="@style/SettingsMenuItemStyle">
+            <LinearLayout style="@style/SettingsMenuItemStyle">
 
-            <TextView
-                style="@style/SettingsMenuItemTextStyle"
-                android:text="@string/night" />
-            <androidx.appcompat.widget.SwitchCompat
-                android:id="@+id/switcher"
-                style="@style/DayNightSwitchStyle" />
+                <TextView
+                    style="@style/SettingsMenuItemTextStyle"
+                    android:text="@string/night" />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switcher"
+                    style="@style/DayNightSwitchStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsMenuItemStyle"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    style="@style/SettingsMenuItemTextStyle"
+                    android:text="@string/share" />
+                <ImageView
+                    android:id="@+id/shareButton"
+                    style="@style/SettingsMenuItemIconStyle"
+                    android:src="@drawable/ic_share_24"
+                    android:importantForAccessibility="no" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsMenuItemStyle"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    style="@style/SettingsMenuItemTextStyle"
+                    android:text="@string/write_support" />
+                <ImageView
+                    android:id="@+id/support_button"
+                    style="@style/SettingsMenuItemIconStyle"
+                    android:src="@drawable/ic_support_20"
+                    android:importantForAccessibility="no" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsMenuItemStyle"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    style="@style/SettingsMenuItemTextStyle"
+                    android:text="@string/contract" />
+                <ImageView
+                    android:id="@+id/user_agreement"
+                    style="@style/SettingsMenuItemIconStyle"
+                    android:src="@drawable/arrow_forward"
+                    android:importantForAccessibility="no" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
-        <LinearLayout style="@style/SettingsMenuItemStyle"
-            tools:ignore="UseCompoundDrawables">
-
-            <TextView
-                style="@style/SettingsMenuItemTextStyle"
-                android:text="@string/share" />
-            <ImageView
-                android:id="@+id/shareButton"
-                style="@style/SettingsMenuItemIconStyle"
-                android:src="@drawable/ic_share_24"
-                android:importantForAccessibility="no" />
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/SettingsMenuItemStyle"
-            tools:ignore="UseCompoundDrawables">
-
-            <TextView
-                style="@style/SettingsMenuItemTextStyle"
-                android:text="@string/write_support" />
-            <ImageView
-                android:id="@+id/support_button"
-                style="@style/SettingsMenuItemIconStyle"
-                android:src="@drawable/ic_support_20"
-                android:importantForAccessibility="no" />
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/SettingsMenuItemStyle"
-            tools:ignore="UseCompoundDrawables">
-
-            <TextView
-                style="@style/SettingsMenuItemTextStyle"
-                android:text="@string/contract" />
-            <ImageView
-                android:id="@+id/user_agreement"
-                style="@style/SettingsMenuItemIconStyle"
-                android:src="@drawable/arrow_forward"
-                android:importantForAccessibility="no" />
-
-        </LinearLayout>
-
-    </LinearLayout>
 
 </LinearLayout>

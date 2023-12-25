@@ -14,12 +14,13 @@ class SearchResultViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val trackTimeView = itemView.findViewById<TextView>(R.id.track_list_time)
     private val artworkUrlView = itemView.findViewById<ImageView>(R.id.track_list_image_url)
 
-    fun bind(item: Track) {
-        trackNameView.text = item.trackName
-        artistNameView.text = item.artistName
-        trackTimeView.text = item.trackTime
+    fun bind(model: Track) {
+        trackNameView.text = model.trackName
+        artistNameView.text = model.artistName
+        trackTimeView.text = model.trackTime
+        
         Glide.with(itemView)
-            .load(item.artworkUrl100)
+            .load(model.artworkUrl100)
             .centerCrop()
             .transform(RoundedCorners(dpToPx(itemView, 2f)))
             .placeholder(R.drawable.ic_placeholder)
@@ -30,4 +31,5 @@ class SearchResultViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 private fun dpToPx(view: View, dp: Float): Int {
     val displayMetrics = view.resources.displayMetrics
     return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, displayMetrics).toInt()
+
 }

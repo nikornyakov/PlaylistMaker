@@ -41,7 +41,7 @@
             android:paddingBottom="1dp"
             android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/text_medium"
-            tools:text="track name" />
+            tools:text="Whole Lotta Love" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
                 android:textColor="?attr/colorOnPrimarySurface"
                 android:textSize="@dimen/text_small"
                 tools:ignore="TextContrastCheck"
-                tools:text="artist name" />
+                tools:text="Led Zeppelin" />
 
             <ImageView
                 android:id="@+id/track_list_dot"
@@ -75,7 +75,7 @@
                 android:textColor="?attr/colorOnPrimarySurface"
                 android:textSize="@dimen/text_small"
                 tools:ignore="TextContrastCheck"
-                tools:text="track_time" />
+                tools:text="5:33" />
 
         </LinearLayout>
 

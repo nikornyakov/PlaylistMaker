@@ -11,7 +11,12 @@
         <item name="colorOnSurface">@color/grey</item>
         <item name="android:statusBarColor">@color/blue</item>
         <item name="colorOnPrimarySurface">@color/grey</item>
+        <item name="android:textColorHintInverse">@color/grey</item>
 
+    </style>
+
+    <style name="exampleCursor" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="colorControlActivated">@color/blue</item>
     </style>
 
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker">
